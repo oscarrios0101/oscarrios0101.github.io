@@ -43,19 +43,23 @@ body {
 }
 
 .descripcion {
-  background-color: #0095e2;
+  background-color: inherit;
+  color: #eae2b7;
   height: auto;
+  font-family: "Vollkorn", serif;
   font-size: 2rem;
+  padding: 2rem;
 }
 
 .descripcion .grid-wrapper {
   display: -ms-grid;
   display: grid;
+  gap: 10px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1f;
       grid-template-rows: 1fr 1fr 1f;
-      grid-template-areas: "description-1 description-1 ." ". description-2 description-2";
+      grid-template-areas: "description-1 description-1 ." ". . description-2";
 }
 
 .descripcion .description-1 {
@@ -67,7 +71,6 @@ body {
 
 .descripcion .description-2 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column: 3;
   grid-area: description-2;
 }

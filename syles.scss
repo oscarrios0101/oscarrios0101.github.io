@@ -40,16 +40,20 @@ body {
 }
 
 .descripcion {
-  background-color: lighten($color: $background-color, $amount: 30%);
+  background-color: inherit;
+  color: $secondary-color;
   height: auto;
+  font-family: $regular-text;
   font-size: 2rem;
+  padding: 2rem;
   .grid-wrapper {
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1f;
     grid-template-areas:
       "description-1 description-1 ."
-      ". description-2 description-2";
+      ". . description-2";
   }
   .description-1 {
     grid-area: description-1;
