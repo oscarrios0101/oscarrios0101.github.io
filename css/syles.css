@@ -44,28 +44,30 @@ body {
 
 .descripcion {
   background-color: #0095e2;
-  height: 60vh;
+  height: auto;
   font-size: 2rem;
 }
 
 .descripcion .grid-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "description-1 ." ". description-2";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1f;
+      grid-template-rows: 1fr 1fr 1f;
+      grid-template-areas: "description-1 description-1 ." ". description-2 description-2";
 }
 
 .descripcion .description-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: description-1;
 }
 
 .descripcion .description-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: description-2;
 }

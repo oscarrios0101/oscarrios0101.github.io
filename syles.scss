@@ -41,15 +41,15 @@ body {
 
 .descripcion {
   background-color: lighten($color: $background-color, $amount: 30%);
-  height: 60vh;
+  height: auto;
   font-size: 2rem;
   .grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1f;
     grid-template-areas:
-      "description-1 ."
-      ". description-2";
+      "description-1 description-1 ."
+      ". description-2 description-2";
   }
   .description-1 {
     grid-area: description-1;
