@@ -49,6 +49,7 @@ body {
   height: auto;
   font-family: "Vollkorn", serif;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .general-description .grid-wrapper {
@@ -76,42 +77,35 @@ body {
 }
 
 .technologies {
-  width: 60%;
+  width: 100%;
   color: #eae2b7;
   height: auto;
-  background: rgba(211, 211, 211, 0.096);
+  border: 4px #fcbf49 solid;
+  border-radius: 9px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  border-radius: 2px solid #fcbf49;
   font-family: "Vollkorn", serif;
-  padding: 1rem;
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.technologies .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.technology__title {
-  font-size: 2rem;
-  max-width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.technologies .technology__title {
+  font-size: 2.5rem;
+}
+
+.technology__title:nth-child(even) {
+  font-size: 2.5rem;
+}
+
+.technology__description {
+  font-size: 1.5rem;
 }
