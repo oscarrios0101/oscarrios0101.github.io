@@ -24,6 +24,7 @@ $secondary-color: #eae2b7;
 body {
   background-color: $background-color;
   overflow-x: hidden;
+  padding: 2rem;
 }
 .title-wrapper {
   height: 100vh;
@@ -39,13 +40,12 @@ body {
   color: $title-color;
 }
 
-.descripcion {
+.general-description {
   background-color: inherit;
   color: $secondary-color;
   height: auto;
   font-family: $regular-text;
   font-size: 2rem;
-  padding: 2rem;
   .grid-wrapper {
     display: grid;
     gap: 10px;
@@ -61,4 +61,29 @@ body {
   .description-2 {
     grid-area: description-2;
   }
+}
+
+.technologies {
+  width: 60%;
+  height: auto;
+  background: rgba(211, 211, 211, 0.548);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: $regular-text;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px black solid;
+  text-align: center;
+}
+
+.technology__title {
+  font-size: 2rem;
+  justify-content: end;
+  max-width: 50%;
 }
