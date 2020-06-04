@@ -65,25 +65,26 @@ body {
 
 .technologies {
   width: 60%;
+  color: $secondary-color;
   height: auto;
-  background: rgba(211, 211, 211, 0.548);
+  background: rgba(211, 211, 211, 0.096);
   margin: auto;
   display: flex;
   flex-direction: column;
   font-family: $regular-text;
+  padding: 1rem;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: ;
   align-items: center;
-  border: 2px black solid;
-  text-align: center;
 }
 
 .technology__title {
   font-size: 2rem;
-  justify-content: end;
   max-width: 50%;
+  display: flex;
+  justify-content: flex-start;
 }
